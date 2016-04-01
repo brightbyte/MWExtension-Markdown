@@ -1,0 +1,7 @@
+{
+	"@metadata": {
+		"authors": [ "Daniel Kinzler" ]
+	},
+	"markdown-extensionname": "Markdown",
+	"markdown-desc": "Markduwn support for MediaWiki"
+}

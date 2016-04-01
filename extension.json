@@ -1,0 +1,36 @@
+{
+	"name": "Markdown",
+	"namemsg": "markdown-extensionname",
+	"version": "0.0.1",
+	"author": [
+		"Daniel Kinzler"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Markdown",
+	"descriptionmsg": "markdown-desc",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"MessagesDirs": {
+		"Markdown": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"Markdown": "Markdown.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\Markdown\\MarkdownContent": "src/MarkdownContent.php",
+		"MediaWiki\\Extension\\Markdown\\MarkdownHandler": "src/MarkdownHandler.php",
+		"MediaWiki\\Extension\\Markdown\\MarkdownHooks": "src/MarkdownHooks.php"
+	},
+	"Hooks": {
+	},
+	"config": {
+		"ContentHandlers": {
+			"Markdown": "MediaWiki\\Extension\\Markdown\\MarkdownHandler"
+		},
+		"NamespaceContentModels": {
+			"0": "Markdown"
+		}
+	},
+	"manifest_version": 1
+}
