@@ -23,6 +23,7 @@
 		"MediaWiki\\Extension\\Markdown\\MarkdownHooks": "src/MarkdownHooks.php"
 	},
 	"Hooks": {
+		"ContentHandlerDefaultModelFor": "MediaWiki\\Extension\\Markdown\\MarkdownHooks::onContentHandlerDefaultModelFor"
 	},
 	"config": {
 		"ContentHandlers": {

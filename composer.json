@@ -1,0 +1,13 @@
+{
+	"name": "mediawiki/markdown",
+	"description": "MediaWiki Markdown extension",
+	"keywords": [
+		"mediawiki",
+		"markdown"
+	],
+	"type": "mediawiki-extension",
+	"license": "GPL-2.0",
+	"require": {
+		"michelf/php-markdown": "~1.6.0"
+	}
+}

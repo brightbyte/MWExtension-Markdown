@@ -1,6 +1,7 @@
 <?php
 
 namespace MediaWiki\Extension\Markdown;
+use Title;
 
 /**
  * Hook handlers for markdown support
@@ -10,6 +11,13 @@ namespace MediaWiki\Extension\Markdown;
  */
 class MarkdownHooks {
 
-	// TBD
+	public static function onContentHandlerDefaultModelFor( Title $title, &$model ) {
+		if ( preg_match( '/\.md$/', $title->getText() ) && !$title->isTalkPage() ) {
+			$model = 'Markdown';
+			return false;
+		}
+
+		return true;
+	}
 
 }
